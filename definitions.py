@@ -1,0 +1,15 @@
+game_mode = {
+    'war': 'Team Deathmatch',
+    'arm': 'Ground War',
+    'arena': '2v2',
+    'dom': 'Domination',
+    'hq': 'Headquarters',
+    'conf': 'conf?',
+    'koth': 'Hardpoint',
+    'sd': 'Search and Destroy',
+    'infect': 'Infected',
+    'ctf': 'Capture the Flag',
+    'gun': 'gun?',
+    '754803685826851': 'WZ-Trios',
+    '4809278764799091': 'WZ-Quads',
+    }

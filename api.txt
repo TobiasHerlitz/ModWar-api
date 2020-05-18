@@ -1,0 +1,48 @@
+PLAYER INFO
+Lifetime och weekly stats för mp och wz, fördelat på game modes
+Kan användas för mp och wz. Lifetime stats påverkas inte men vilken weekly stats man får avgörs av mp/wz
+Man kan lägga till /details på slutet och fortfarande få data men datan är identisk
+Använd version1 = 'v1'
+https://my.callofduty.com/api/papi-client/stats/cod/{VERSION}/title/{TITLE}/platform/{PLATFORM}/gamer/{GAMER_NAME}/profile/type/{GAME_TYPE}
+https://my.callofduty.com/api/papi-client/stats/cod/v1/title/mw/platform/psn/gamer/spelamedtobbe/profile/type/mp
+
+
+SENASTE 20 MATCHERNA
+Kan användas för mp och wz
+Lägg till nyckelordet "details" för att få information om motståndare
+{START} och {END} är UNIX time(time since epoch) uttryckt i millisekunder(13 tecken). Verkar skicka ett intervall där x är {START} <= x < {END}
+Använd version2 = 'v2'
+https://my.callofduty.com/api/papi-client/crm/cod/{VERSION}/title/{TITLE}/platform/{PLATFORM}/gamer/{GAMER_NAME}/matches/{GAME_TYPE}/start/{START}/end/{END}/{DETAILS}
+https://my.callofduty.com/api/papi-client/crm/cod/v2/title/mw/platform/psn/gamer/spelamedtobbe/matches/wz/start/0/end/0/details
+
+
+MATCHINFO ??
+Har inte fått det att funka. Taget från https://github.com/jimbrig/codmw/issues/7
+Man ska kunna söka på matcher istället för att behöva intervallet i API-call ovan så det vore bra
+https://my.callofduty.com/api/papi-client/ce/version/{version}/title/{game}/platform/{platform}/match/{matchID}/matchMapEvents/
+
+
+
+platforms = {
+    'xbox': 'xbl',
+    'playstation': 'psn',
+    'battlenet': 'battle',
+    'activision': 'uno',
+    'steam': 'steam'
+}
+
+game_type = {
+    'multiplayer': 'mp'
+    'warzone': 'wz'
+}
+
+game_mode = {
+	'war': 'Team Deathmatch',
+	'arm': 'Ground War',
+	'arena' '2v2',
+	'dom': 'Domination'
+}
+
+br_71 = ??(Battle Royale??)
+br_25 = WZ-Trios
+br_89 = WZ-Quads
