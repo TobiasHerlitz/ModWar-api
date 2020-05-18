@@ -5,3 +5,4 @@ x.fetch_user()
 y = x.get_kd()
 
 print(y)
+print('blubblub')
