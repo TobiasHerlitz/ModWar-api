@@ -16,11 +16,10 @@ https://my.callofduty.com/api/papi-client/crm/cod/{VERSION}/title/{TITLE}/platfo
 https://my.callofduty.com/api/papi-client/crm/cod/v2/title/mw/platform/psn/gamer/spelamedtobbe/matches/wz/start/0/end/0/details
 
 
-MATCHINFO ??
-Har inte fått det att funka. Taget från https://github.com/jimbrig/codmw/issues/7
-Man ska kunna söka på matcher istället för att behöva intervallet i API-call ovan så det vore bra
+MATCHINFO
+Funkar för multiplayer. Returnerar spelarlista och alla "engagements" för en match.
 https://my.callofduty.com/api/papi-client/ce/version/{version}/title/{game}/platform/{platform}/match/{matchID}/matchMapEvents/
-
+https://my.callofduty.com/api/papi-client/ce/v1/title/mw/platform/psn/match/3164339122446119171/matchMapEvents
 
 
 platforms = {
